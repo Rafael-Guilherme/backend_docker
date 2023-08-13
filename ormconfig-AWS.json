@@ -1,0 +1,13 @@
+{
+  "type": "mysql",
+  "host": "socialmentesdb.calwbiqxphqd.us-east-1.rds.amazonaws.com",
+   "port": 3306,
+   "username": "adminsocial",
+   "password": "S0C1ALm3nt3s40$#",
+   "database": "socialmentes",
+   "entities": ["./dist/models/*.js"],
+   "migrations": ["./dist/database/migrations/*.js"],
+   "cli": {
+     "migrationsDir": "./src/database/migrations"
+   }
+}
