@@ -1,7 +1,7 @@
 FROM node:18.16.0
-WORKDIR /usr/code
-COPY package.json .
+WORKDIR /app
+COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD npm run start
